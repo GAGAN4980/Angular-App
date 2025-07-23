@@ -1,0 +1,10 @@
+<form [formGroup]="userForm">
+  <label for="fname">Full Name:</label><br>
+  <input type="text" id="fname" name="fname" formControlName="fullName"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" formControlName="emailId">
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" formControlName="password">
+  <br/>
+  <button (click)="onSubmitClicked()">Submit</button>
+</form>
